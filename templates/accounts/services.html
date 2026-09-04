@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | VideoSnap</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Services */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+/* CTA */
+
+.cta{
+    background:white;
+    text-align:center;
+    margin:70px auto;
+    width:90%;
+    max-width:1000px;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cta h2{
+    margin-bottom:15px;
+    color:#1f2937;
+}
+
+.cta p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.cta a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+}
+
+.cta a:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="features.html">Features</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Our Services</h1>
+
+<p>
+VideoSnap provides a collection of tools that make managing and sharing your videos simple, secure, and efficient.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="services">
+
+<div class="card">
+<div class="icon">🎥</div>
+<h2>Video Hosting</h2>
+<p>Upload and organize your videos in one secure location.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<div class="icon">☁️</div>
+<h2>Cloud Storage</h2>
+<p>Access your content anytime from multiple devices.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<div class="icon">🔒</div>
+<h2>Secure Access</h2>
+<p>Keep your account and videos protected with secure authentication.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<div class="icon">📊</div>
+<h2>Analytics</h2>
+<p>Track views, uploads, and activity through easy-to-read statistics.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<h2>Fast Uploads</h2>
+<p>Experience smooth and efficient video uploads with optimized performance.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<div class="icon">💬</div>
+<h2>Customer Support</h2>
+<p>Reach our support team whenever you need assistance.</p>
+<button>Explore</button>
+</div>
+
+</div>
+
+</div>
+
+<section class="cta">
+
+<h2>Ready to Get Started?</h2>
+
+<p>
+Create your free VideoSnap account today and experience a smarter way to manage your videos.
+</p>
+
+<a href="signup.html">Create an Account</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <title>square root of A and B</title>
+</head>
+<body>
+
+    <h2>square root of A and B</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div>
+            <label>A Value</label><br>
+            <input type="text" name="AValue" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>B Value</label><br>
+            <input type="text" name="BValue" required>
+        </div>
+
+        <br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>{{ AValue }}</p>
+    <p>{{ BValue }}</p>
+    <p>{{ CValue }}</p>
+
+    <p>
+        Don't have an account?
+        <a href="{% url 'signup' %}">Signup</a>
+    </p>

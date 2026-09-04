@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features | VideoSnap</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navbar */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:45px;
+    color:#1f2937;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#666;
+    font-size:18px;
+}
+
+/* Cards */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.card button{
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Our Features</h1>
+
+<p>
+Discover the powerful tools that make VideoSnap simple, secure, and enjoyable.
+</p>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<div class="icon">📤</div>
+
+<h2>Easy Uploads</h2>
+
+<p>
+Upload your videos quickly with a simple and user-friendly interface.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🔒</div>
+
+<h2>Secure Storage</h2>
+
+<p>
+Your videos are protected using modern security practices.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">⚡</div>
+
+<h2>Fast Performance</h2>
+
+<p>
+Enjoy quick uploads and smooth browsing with optimized performance.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h2>Responsive Design</h2>
+
+<p>
+Access VideoSnap seamlessly from desktops, tablets, and mobile devices.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">☁️</div>
+
+<h2>Cloud Ready</h2>
+
+<p>
+Store and access your videos anytime from anywhere.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">👥</div>
+
+<h2>User Friendly</h2>
+
+<p>
+A clean interface designed to provide an excellent user experience.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

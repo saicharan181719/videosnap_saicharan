@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Details</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f3f2ef;
+        }
+
+        .container{
+            width:900px;
+            margin:30px auto;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:20px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        h2{
+            color:#0A66C2;
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-top:10px;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input,
+        textarea,
+        select{
+
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+
+        }
+
+        textarea{
+            resize:none;
+            height:100px;
+        }
+
+        button{
+
+            margin-top:20px;
+            width:100%;
+            padding:12px;
+            border:none;
+            background:#0A66C2;
+            color:white;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+
+        }
+
+        button:hover{
+
+            background:#004182;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form method="POST">
+
+{% csrf_token %}
+
+<!-- Education -->
+
+<div class="card">
+
+<h2>Education</h2>
+
+<label>College Name</label>
+<input type="text" name="college_name">
+
+<label>Degree</label>
+<input type="text" name="degree">
+
+<label>Field of Study</label>
+<input type="text" name="field_of_study">
+
+<label>Start Year</label>
+<input type="number" name="start_year">
+
+<label>End Year</label>
+<input type="number" name="end_year">
+
+</div>
+
+<!-- Experience -->
+
+<div class="card">
+
+<h2>Experience</h2>
+
+<label>Company Name</label>
+<input type="text" name="company_name">
+
+<label>Job Title</label>
+<input type="text" name="job_title">
+
+<label>Description</label>
+<textarea name="experience_description"></textarea>
+
+<label>Start Date</label>
+<input type="date" name="experience_start_date">
+
+<label>End Date</label>
+<input type="date" name="experience_end_date">
+
+</div>
+
+<!-- Skill -->
+
+<div class="card">
+
+<h2>Skill</h2>
+
+<label>Skill Name</label>
+<input type="text" name="skill_name">
+
+</div>
+
+<!-- Project -->
+
+<div class="card">
+
+<h2>Project</h2>
+
+<label>Project Name</label>
+<input type="text" name="project_name">
+
+<label>Description</label>
+<textarea name="project_description"></textarea>
+
+<label>Project Link</label>
+<input type="url" name="project_link">
+
+</div>
+
+<!-- Certification -->
+
+<div class="card">
+
+<h2>Certification</h2>
+
+<label>Certificate Name</label>
+<input type="text" name="certificate_name">
+
+<label>Organization</label>
+<input type="text" name="organization">
+
+</div>
+
+<!-- Position -->
+
+<div class="card">
+
+<h2>Position</h2>
+
+<label>Title</label>
+<input type="text" name="position_title">
+
+<label>Company</label>
+<input type="text" name="position_company">
+
+<label>Location</label>
+<input type="text" name="position_location">
+
+<label>Start Date</label>
+<input type="date" name="position_start_date">
+
+<label>End Date</label>
+<input type="date" name="position_end_date">
+
+<label>Description</label>
+<textarea name="position_description"></textarea>
+
+</div>
+
+<!-- Service -->
+
+<div class="card">
+
+<h2>Service</h2>
+
+<label>Service Name</label>
+<input type="text" name="service_name">
+
+<label>Description</label>
+<textarea name="service_description"></textarea>
+
+</div>
+
+<!-- Career Break -->
+
+<div class="card">
+
+<h2>Career Break</h2>
+
+<label>Reason</label>
+<input type="text" name="career_reason">
+
+<label>Start Date</label>
+<input type="date" name="career_start_date">
+
+<label>End Date</label>
+<input type="date" name="career_end_date">
+
+<label>Description</label>
+<textarea name="career_description"></textarea>
+
+</div>
+
+<!-- Language -->
+
+<div class="card">
+
+<h2>Language</h2>
+
+<label>Language</label>
+<input type="text" name="language_name">
+
+<label>Proficiency</label>
+
+<select name="proficiency">
+
+<option value="beginner">Beginner</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+<option value="native">Native</option>
+
+</select>
+
+</div>
+
+<button type="submit">
+
+Save Details
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
+
+        .post-card{
+            background:white;
+            width:700px;
+            margin:20px auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        .post-title{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .post-content{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        .images{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:20px;
+        }
+
+        .images img{
+            width:200px;
+            height:200px;
+            object-fit:cover;
+            border-radius:8px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1 align="center">All Posts</h1>
+
+{% for post in posts_all %}
+
+<div class="post-card">
+
+    <div class="post-title">
+        {{ post.title_model }}
+    </div>
+
+    <div class="post-content">
+        {{ post.content_model }}
+    </div>
+
+    <div class="images">
+
+        {% for image in post.images.all %}
+
+            <img src="{{ image.image.url }}" alt="Post Image">
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% empty %}
+
+<h2 align="center">No Posts Available</h2>
+
+{% endfor %}
+
+</body>
+</html>

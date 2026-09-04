@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ profile.user.username }} Profile</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f3f2ef;
+            margin:0;
+            padding:20px;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+        }
+
+        .profile-header{
+            text-align:center;
+        }
+
+        .profile-header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        h2{
+            border-bottom:2px solid #ddd;
+            padding-bottom:10px;
+            color:#333;
+        }
+
+        .card{
+            background:#fafafa;
+            padding:15px;
+            margin:15px 0;
+            border-radius:8px;
+        }
+
+        .item{
+            margin-bottom:15px;
+        }
+
+        a{
+            color:blue;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- Profile Section -->
+
+<div class="profile-header">
+
+
+{% if profile.profile_picture %}
+
+<img src="{{profile.profile_picture.url}}">
+
+{% endif %}
+
+
+<h1>
+{{profile.user.username}}
+</h1>
+
+
+<p>
+{{profile.about}}
+</p>
+
+
+<p>
+📍 {{profile.city}}, {{profile.district}}, {{profile.state}}
+</p>
+
+
+</div>
+
+
+
+<!-- Education -->
+
+<h2>Education</h2>
+
+<div class="card">
+
+{% for edu in education %}
+
+<div class="item">
+
+<h3>{{edu.degree}}</h3>
+
+<p>
+{{edu.college_name}}
+</p>
+
+<p>
+{{edu.field_of_study}}
+</p>
+
+<p>
+{{edu.start_year}} - {{edu.end_year}}
+</p>
+
+
+</div>
+
+{% empty %}
+
+<p>No education details added</p>
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+<!-- Experience -->
+
+<h2>Experience</h2>
+
+<div class="card">
+
+{% for exp in experience %}
+
+<div class="item">
+
+<h3>
+{{exp.job_title}}
+</h3>
+
+
+<p>
+{{exp.company_name}}
+</p>
+
+
+<p>
+{{exp.description}}
+</p>
+
+
+<p>
+{{exp.start_date}} -
+{% if exp.end_date %}
+{{exp.end_date}}
+{% else %}
+Present
+{% endif %}
+</p>
+
+
+</div>
+
+
+{% empty %}
+
+<p>No experience added</p>
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Skills -->
+
+<h2>Skills</h2>
+
+<div class="card">
+
+
+{% for skill in skills %}
+
+<p>
+✔ {{skill.skill_name}}
+</p>
+
+
+{% empty %}
+
+<p>No skills added</p>
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Projects -->
+
+<h2>Projects</h2>
+
+<div class="card">
+
+
+{% for project in projects %}
+
+
+<div class="item">
+
+
+<h3>
+{{project.project_name}}
+</h3>
+
+
+<p>
+{{project.description}}
+</p>
+
+
+{% if project.project_link %}
+
+<a href="{{project.project_link}}" target="_blank">
+View Project
+</a>
+
+{% endif %}
+
+
+</div>
+
+
+{% empty %}
+
+<p>No projects added</p>
+
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Certifications -->
+
+<h2>Certifications</h2>
+
+
+<div class="card">
+
+
+{% for certificate in certifications %}
+
+
+<p>
+
+<b>
+{{certificate.certificate_name}}
+</b>
+
+<br>
+
+{{certificate.organization}}
+
+</p>
+
+
+{% empty %}
+
+<p>No certifications added</p>
+
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Positions -->
+
+<h2>Positions</h2>
+
+
+<div class="card">
+
+
+{% for position in positions %}
+
+
+<div class="item">
+
+
+<h3>
+{{position.title}}
+</h3>
+
+
+<p>
+{{position.company}}
+</p>
+
+
+<p>
+{{position.location}}
+</p>
+
+
+<p>
+{{position.description}}
+</p>
+
+
+</div>
+
+
+{% empty %}
+
+<p>No positions added</p>
+
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Services -->
+
+
+<h2>Services</h2>
+
+
+<div class="card">
+
+
+{% for service in services %}
+
+
+<h3>
+{{service.service_name}}
+</h3>
+
+
+<p>
+{{service.description}}
+</p>
+
+
+{% empty %}
+
+<p>No services added</p>
+
+
+{% endfor %}
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Career Break -->
+
+<h2>Career Breaks</h2>
+
+
+<div class="card">
+
+
+{% for break in career_breaks %}
+
+
+<h3>
+{{break.reason}}
+</h3>
+
+
+<p>
+{{break.start_date}} -
+{{break.end_date}}
+</p>
+
+
+<p>
+{{break.description}}
+</p>
+
+
+{% empty %}
+
+<p>No career breaks</p>
+
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Languages -->
+
+<h2>Languages</h2>
+
+
+<div class="card">
+
+
+{% for lang in languages %}
+
+
+<p>
+
+{{lang.language_name}}
+
+-
+{{lang.proficiency}}
+
+</p>
+
+
+{% empty %}
+
+<p>No languages added</p>
+
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+</div>
+
+
+</body>
+
+</html>

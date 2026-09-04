@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Django
+db.sqlite3
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploaded media
+# Uncomment this if you don't want uploaded files in GitHub
+# media/
+media/videos/Prooject_Deepak_Mourya4k.MP4

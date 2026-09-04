@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roadmap | VideoSnap</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+/* Navbar */
+
+nav{
+background:#1f2937;
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+/* Roadmap */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:60px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.column{
+background:white;
+border-radius:12px;
+padding:30px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.column h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.completed h2{
+color:#16a34a;
+}
+
+.progress h2{
+color:#d97706;
+}
+
+.planned h2{
+color:#2563eb;
+}
+
+.item{
+background:#f8fafc;
+padding:18px;
+border-left:5px solid #2563eb;
+margin-bottom:18px;
+border-radius:8px;
+}
+
+.completed .item{
+border-left-color:#16a34a;
+}
+
+.progress .item{
+border-left-color:#d97706;
+}
+
+.item h3{
+margin-bottom:8px;
+}
+
+.item p{
+color:#555;
+line-height:1.6;
+}
+
+/* Timeline */
+
+.timeline{
+width:90%;
+max-width:1000px;
+margin:70px auto;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.timeline h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.timeline table{
+width:100%;
+border-collapse:collapse;
+}
+
+.timeline th,
+.timeline td{
+padding:15px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+.timeline th{
+background:#2563eb;
+color:white;
+}
+
+/* Footer */
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="release_notes.html">Release Notes</a></li>
+<li><a href="features.html">Features</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Product Roadmap</h1>
+
+<p>
+Discover what we've built, what we're currently working on, and what's coming next.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="column completed">
+
+<h2>✅ Completed</h2>
+
+<div class="item">
+<h3>User Authentication</h3>
+<p>Secure login, registration, and password recovery.</p>
+</div>
+
+<div class="item">
+<h3>Responsive Website</h3>
+<p>Optimized experience for desktop, tablet, and mobile devices.</p>
+</div>
+
+<div class="item">
+<h3>Help Center</h3>
+<p>Documentation, FAQs, and user guides.</p>
+</div>
+
+<div class="item">
+<h3>Community Portal</h3>
+<p>Discussion groups and community engagement features.</p>
+</div>
+
+</div>
+
+<div class="column progress">
+
+<h2>🚧 In Progress</h2>
+
+<div class="item">
+<h3>Video Dashboard</h3>
+<p>Manage uploaded videos with analytics.</p>
+</div>
+
+<div class="item">
+<h3>Notifications</h3>
+<p>Real-time alerts for account activity.</p>
+</div>
+
+<div class="item">
+<h3>Dark Mode</h3>
+<p>Light and dark theme switching.</p>
+</div>
+
+</div>
+
+<div class="column planned">
+
+<h2>🚀 Planned</h2>
+
+<div class="item">
+<h3>AI Video Search</h3>
+<p>Find videos using intelligent search.</p>
+</div>
+
+<div class="item">
+<h3>Live Streaming</h3>
+<p>Broadcast videos directly from the platform.</p>
+</div>
+
+<div class="item">
+<h3>Mobile Application</h3>
+<p>Native Android and iOS applications.</p>
+</div>
+
+<div class="item">
+<h3>Cloud Sync</h3>
+<p>Automatic synchronization across all devices.</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="timeline">
+
+<h2>Development Timeline</h2>
+
+<table>
+
+<tr>
+
+<th>Quarter</th>
+
+<th>Goals</th>
+
+</tr>
+
+<tr>
+
+<td>Q1 2026</td>
+
+<td>Authentication, Homepage, Contact Pages</td>
+
+</tr>
+
+<tr>
+
+<td>Q2 2026</td>
+
+<td>Community, Blog, Events, Release Notes</td>
+
+</tr>
+
+<tr>
+
+<td>Q3 2026</td>
+
+<td>Dashboard, Notifications, AI Search</td>
+
+</tr>
+
+<tr>
+
+<td>Q4 2026</td>
+
+<td>Mobile App & Live Streaming</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

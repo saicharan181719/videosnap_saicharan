@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'products/style.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>VideoSnap Store</h1>
+
+    <div class="products">
+
+        {% for product in products %}
+
+        <div class="card">
+
+            <img src="{{ product.image.url }}" alt="">
+
+            <h2>{{ product.name }}</h2>
+
+            <p>{{ product.description|truncatewords:15 }}</p>
+
+            <h3>₹{{ product.price }}</h3>
+
+            <p>Stock : {{ product.stock }}</p>
+
+            <div class="buttons">
+
+                <a href="{% url 'product_detail' product.id %}" class="view">
+                    View Details
+                </a>
+
+                <a href="{% url 'add_to_cart' product.id %}" class="cart">
+                    Add to Cart
+                </a>
+
+            </div>
+
+        </div>
+
+        {% empty %}
+
+        <h2>No Products Available</h2>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+</body>
+</html>

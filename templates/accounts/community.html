@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community | VideoSnap</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+/* Navigation */
+
+nav{
+background:#1f2937;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+/* Community Stats */
+
+.stats{
+width:90%;
+max-width:1200px;
+margin:60px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat-card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-card h2{
+font-size:38px;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.stat-card p{
+color:#555;
+}
+
+/* Groups */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:50px auto;
+}
+
+.container h2{
+text-align:center;
+margin-bottom:35px;
+color:#1f2937;
+}
+
+.groups{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.group{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.group:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+font-size:55px;
+margin-bottom:15px;
+text-align:center;
+}
+
+.group h3{
+text-align:center;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.group p{
+color:#555;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.group button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.group button:hover{
+background:#1d4ed8;
+}
+
+/* Guidelines */
+
+.guidelines{
+margin-top:70px;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.guidelines h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.guidelines ul{
+padding-left:20px;
+line-height:2;
+color:#555;
+}
+
+/* CTA */
+
+.cta{
+margin:70px auto;
+background:white;
+max-width:900px;
+padding:45px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cta h2{
+margin-bottom:15px;
+}
+
+.cta p{
+margin-bottom:25px;
+color:#555;
+}
+
+.cta a{
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:14px 28px;
+border-radius:6px;
+}
+
+.cta a:hover{
+background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Join Our Community</h1>
+
+<p>
+Connect with creators, developers, students, and professionals who use VideoSnap every day.
+</p>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-card">
+<h2>12K+</h2>
+<p>Community Members</p>
+</div>
+
+<div class="stat-card">
+<h2>850+</h2>
+<p>Daily Discussions</p>
+</div>
+
+<div class="stat-card">
+<h2>500+</h2>
+<p>Shared Tutorials</p>
+</div>
+
+<div class="stat-card">
+<h2>24/7</h2>
+<p>Community Support</p>
+</div>
+
+</section>
+
+<div class="container">
+
+<h2>Popular Community Groups</h2>
+
+<div class="groups">
+
+<div class="group">
+
+<div class="icon">🎥</div>
+
+<h3>Content Creators</h3>
+
+<p>
+Share tips, editing tricks, and video production techniques with other creators.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+<div class="group">
+
+<div class="icon">💻</div>
+
+<h3>Developers</h3>
+
+<p>
+Discuss web development, Django integration, APIs, and new technologies.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+<div class="group">
+
+<div class="icon">🎓</div>
+
+<h3>Students</h3>
+
+<p>
+Learn from peers, collaborate on projects, and improve your technical skills.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+<div class="group">
+
+<div class="icon">🚀</div>
+
+<h3>Startup Founders</h3>
+
+<p>
+Network with entrepreneurs and exchange ideas about building successful products.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+<div class="group">
+
+<div class="icon">🎨</div>
+
+<h3>Designers</h3>
+
+<p>
+Explore UI/UX design, branding, and creative inspiration with fellow designers.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+<div class="group">
+
+<div class="icon">📱</div>
+
+<h3>Tech Enthusiasts</h3>
+
+<p>
+Stay updated with the latest trends in technology, AI, and software development.
+</p>
+
+<button>Join Group</button>
+
+</div>
+
+</div>
+
+<div class="guidelines">
+
+<h2>Community Guidelines</h2>
+
+<ul>
+
+<li>✔ Respect every community member.</li>
+
+<li>✔ Share helpful and meaningful content.</li>
+
+<li>✔ Avoid spam, offensive language, or harmful behavior.</li>
+
+<li>✔ Respect copyrights and intellectual property.</li>
+
+<li>✔ Help others learn and grow.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<section class="cta">
+
+<h2>Become Part of Our Community</h2>
+
+<p>
+Meet people with similar interests, participate in discussions, and grow together.
+</p>
+
+<a href="signup.html">Join Now</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>

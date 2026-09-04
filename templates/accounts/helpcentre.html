@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Center | VideoSnap</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.search-box input{
+    width:60%;
+    max-width:500px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* Categories */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Popular Topics */
+
+.topics{
+    margin-top:70px;
+}
+
+.topics h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.topic{
+    background:white;
+    padding:18px 25px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 5px 12px rgba(0,0,0,.06);
+}
+
+/* Support */
+
+.support{
+    margin:70px auto;
+    max-width:900px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.support h2{
+    margin-bottom:15px;
+}
+
+.support p{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.support a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 28px;
+    border-radius:6px;
+}
+
+.support a:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Help Center</h1>
+
+<p>How can we help you today?</p>
+
+<div class="search-box">
+<input
+type="text"
+placeholder="Search for help articles..."
+>
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">👤</div>
+<h2>Account</h2>
+<p>Learn how to create, manage, and secure your account.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔑</div>
+<h2>Password</h2>
+<p>Reset your password or recover your account.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎥</div>
+<h2>Videos</h2>
+<p>Find guides for uploading and managing your videos.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛡️</div>
+<h2>Security</h2>
+<p>Keep your account safe with our security tips.</p>
+</div>
+
+<div class="card">
+<div class="icon">⚙️</div>
+<h2>Settings</h2>
+<p>Customize your profile and account preferences.</p>
+</div>
+
+<div class="card">
+<div class="icon">💬</div>
+<h2>Support</h2>
+<p>Contact our support team for additional assistance.</p>
+</div>
+
+</div>
+
+<div class="topics">
+
+<h2>Popular Help Topics</h2>
+
+<div class="topic">📌 How do I create a VideoSnap account?</div>
+
+<div class="topic">📌 How can I reset my password?</div>
+
+<div class="topic">📌 Which video formats are supported?</div>
+
+<div class="topic">📌 How do I edit my profile?</div>
+
+<div class="topic">📌 How can I contact customer support?</div>
+
+</div>
+
+<div class="support">
+
+<h2>Still Need Help?</h2>
+
+<p>
+If you couldn't find the answer you're looking for,
+our support team is ready to help.
+</p>
+
+<a href="contact.html">
+Contact Support
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

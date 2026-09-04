@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Video Feed</title>
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family:Arial;
+}
+
+.card{
+    width:700px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+}
+
+video{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.info{
+    color:gray;
+    font-size:14px;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 align="center">Video Feed</h1>
+
+{% for video in videos_all %}
+
+<div class="card">
+
+    <h2>{{ video.title }}</h2>
+
+    <p>{{ video.description }}</p>
+
+    <video controls>
+
+        <source src="{{ video.video.url }}">
+
+        Your browser doesn't support videos.
+
+    </video>
+
+    <div class="info">
+
+        Uploaded by :
+        {{ video.user.username }}
+
+        <br><br>
+
+        Views :
+        {{ video.views }}
+
+        <br><br>
+
+        Uploaded :
+        {{ video.created_at }}
+
+    </div>
+
+</div>
+
+{% empty %}
+
+<h2 align="center">No Videos Uploaded</h2>
+
+{% endfor %}
+
+</body>
+
+</html>

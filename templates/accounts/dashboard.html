@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Navbar */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:50px;
+}
+
+.hero h1{
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+/* Dashboard Cards */
+
+.container{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.12);
+
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#1f2937;
+}
+
+.card p{
+    margin-bottom:20px;
+    color:#666;
+}
+
+.card a{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+.card a:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:20px;
+    background:#1f2937;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="upload.html">Upload</a></li>
+<li><a href="notifications.html">Notifications</a></li>
+<li><a href="{% url 'logout'%}">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Welcome Back!</h1>
+
+<p>Manage your account and videos from your dashboard.</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Upload Video</h2>
+
+<p>Upload new videos to your account.</p>
+
+<a href="upload.html">Open</a>
+
+</div>
+
+<div class="card">
+
+<h2>My Videos</h2>
+
+<p>View all uploaded videos.</p>
+
+<a href="my_videos.html">View</a>
+
+</div>
+
+<div class="card">
+
+<h2>Profile</h2>
+
+<p>Update your personal information.</p>
+
+<a href="profile.html">Open</a>
+
+</div>
+
+<div class="card">
+
+<h2>Notifications</h2>
+
+<p>See your latest notifications.</p>
+
+<a href="notifications.html">Open</a>
+
+</div>
+
+<div class="card">
+
+<h2>Search Videos</h2>
+
+<p>Search videos quickly.</p>
+
+<a href="search.html">Search</a>
+
+</div>
+
+<div class="card">
+
+<h2>Logout</h2>
+
+<p>Sign out from your account safely.</p>
+
+<a href="logout/">Logout</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 VideoSnap. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>

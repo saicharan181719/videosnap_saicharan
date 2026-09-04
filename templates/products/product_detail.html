@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>{{ product.name }}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'products/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="detail-container">
+
+    <div class="detail-card">
+
+        <div class="image">
+
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+
+        </div>
+
+        <div class="info">
+
+            <h1>{{ product.name }}</h1>
+
+            <h2>₹{{ product.price }}</h2>
+
+            <p>{{ product.description }}</p>
+
+            <h3>Stock : {{ product.stock }}</h3>
+
+            <div class="buttons">
+
+                <a href="{% url 'add_to_cart' product.id %}" class="cart">
+                    Add to Cart
+                </a>
+
+                <a href="{% url 'products' %}" class="view">
+                    Back to Products
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

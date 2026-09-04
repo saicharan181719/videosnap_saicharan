@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | VideoSnap</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Why Join */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Jobs */
+
+.jobs{
+    margin-top:70px;
+}
+
+.jobs h2{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.job{
+    background:white;
+    padding:25px;
+    border-left:6px solid #2563eb;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+
+.job h3{
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+.job p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.job button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.job button:hover{
+    background:#1d4ed8;
+}
+
+/* CTA */
+
+.cta{
+    margin:70px auto;
+    background:white;
+    max-width:900px;
+    text-align:center;
+    padding:45px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cta h2{
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.cta a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:14px 28px;
+    border-radius:6px;
+}
+
+.cta a:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Careers at VideoSnap</h1>
+
+<p>
+Join our growing team and help us build innovative video solutions for users around the world.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">💼</div>
+<h3>Career Growth</h3>
+<p>Learn, grow, and build your future with exciting opportunities.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Great Team</h3>
+<p>Work alongside talented people in a collaborative environment.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌍</div>
+<h3>Flexible Work</h3>
+<p>Support for remote, hybrid, and office-based work models.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Meaningful Impact</h3>
+<p>Build products that are used and appreciated by thousands of users.</p>
+</div>
+
+</div>
+
+<section class="jobs">
+
+<h2>Current Openings</h2>
+
+<div class="job">
+<h3>Frontend Developer</h3>
+<p>HTML • CSS • JavaScript • Responsive Design</p>
+<button>Apply Now</button>
+</div>
+
+<div class="job">
+<h3>Backend Developer</h3>
+<p>Python • Django • REST APIs • MySQL</p>
+<button>Apply Now</button>
+</div>
+
+<div class="job">
+<h3>UI/UX Designer</h3>
+<p>Figma • Wireframing • Prototyping</p>
+<button>Apply Now</button>
+</div>
+
+<div class="job">
+<h3>QA Engineer</h3>
+<p>Manual Testing • Automation • Bug Tracking</p>
+<button>Apply Now</button>
+</div>
+
+</section>
+
+<div class="cta">
+
+<h2>Don't See a Suitable Role?</h2>
+
+<p>
+We're always looking for talented individuals. Send us your resume, and we'll contact you when a suitable opportunity becomes available.
+</p>
+
+<a href="contact.html">Get in Touch</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

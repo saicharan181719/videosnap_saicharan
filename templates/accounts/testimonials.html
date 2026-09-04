@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials | VideoSnap</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Testimonials */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.avatar{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.profile h3{
+    margin-bottom:5px;
+}
+
+.stars{
+    color:gold;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin:70px auto;
+}
+
+.stat{
+    background:white;
+    width:220px;
+    text-align:center;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat h2{
+    color:#2563eb;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+    width:90%;
+    max-width:900px;
+    background:white;
+    margin:70px auto;
+    padding:45px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cta h2{
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:25px;
+    color:#555;
+}
+
+.cta a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:14px 28px;
+    border-radius:6px;
+}
+
+.cta a:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VideoSnap</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="features.html">Features</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>What Our Users Say</h1>
+
+<p>Thousands of users trust VideoSnap to manage and organize their videos.</p>
+
+</section>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+
+<div class="profile">
+<div class="avatar">A</div>
+
+<div>
+<h3>Alex Johnson</h3>
+<p>Content Creator</p>
+</div>
+
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+VideoSnap has completely changed the way I manage my videos. The interface is simple, fast, and incredibly reliable.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="profile">
+<div class="avatar">S</div>
+
+<div>
+<h3>Sarah Lee</h3>
+<p>Student</p>
+</div>
+
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+Uploading and organizing my project videos has never been easier. I highly recommend VideoSnap to everyone.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="profile">
+<div class="avatar">M</div>
+
+<div>
+<h3>Michael Brown</h3>
+<p>Software Engineer</p>
+</div>
+
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+The clean design and fast performance make this platform one of the best video management tools I've used.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="stats">
+
+<div class="stat">
+<h2>5K+</h2>
+<p>Happy Users</p>
+</div>
+
+<div class="stat">
+<h2>20K+</h2>
+<p>Videos Uploaded</p>
+</div>
+
+<div class="stat">
+<h2>99%</h2>
+<p>User Satisfaction</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Become Part of Our Community</h2>
+
+<p>Join thousands of satisfied users and start managing your videos today.</p>
+
+<a href="signup.html">Join Now</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 VideoSnap. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
